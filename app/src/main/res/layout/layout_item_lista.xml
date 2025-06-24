@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/borda"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_margin="22dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/ivLogoMedicamento"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/medicamento_logo"
+        android:layout_margin="20dp"/>
+
+    <TextView
+
+        android:id="@+id/tvNomeMedicamento"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="Nome Medicamento"
+        android:textSize="15sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tvHorario"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="08:00"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#444"/>
+
+    <ImageButton
+        android:id="@+id/btnEditar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_edit"
+        android:contentDescription="Editar"
+        app:tint="#3F51B5"
+        android:padding="6dp"
+        android:layout_marginStart="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnExcluir"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="Excluir"
+        app:tint="#E53935"
+        android:padding="6dp"
+        android:layout_marginStart="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF7F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/Agendamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_agendar_medicamento"
+            android:textSize="38sp"
+            android:textColor="#AE525F"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_medicamento"
+            android:textSize="20sp"
+            android:labelFor="@id/etNomeMedicamento"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:id="@+id/etNomeMedicamento"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@drawable/borda"
+            android:textColorHint="#EBEBEB"
+            android:inputType="textCapWords"
+            android:importantForAccessibility="yes"
+            android:autofillHints="name"
+            android:maxWidth="400dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selecione_data"
+            android:textSize="20sp"
+            android:labelFor="@id/dpAgeData"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <DatePicker
+            android:id="@+id/dpAgeData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/horario_inicial"
+            android:textSize="20sp"
+            android:labelFor="@id/timePicker"
+            android:layout_marginTop="10dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intervalo_doses"
+            android:textSize="20sp"
+            android:labelFor="@id/spAgIntervalo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/spAgIntervalo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_dias"
+            android:textSize="20sp"
+            android:labelFor="@id/etNumeroDias"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/etNumeroDias"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:gravity="center"
+            android:text="@string/default_numero_dias"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:importantForAccessibility="yes"
+            android:autofillHints="none"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btAgeAgendar"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:padding="12dp"
+            android:text="@string/botao_agendar"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dosealertaapp">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoseAlertaApp">
+
+        <!-- MainActivity é a tela de abertura -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DoseAlertaApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DoseAlertaApp"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DoseAlertaApp"/>
+
+        <!-- Outras Activities -->
+        <activity android:name=".Agendamento" android:exported="false" />
+        <activity android:name=".ListaAgendamentosActivity" android:exported="false" />
+        <activity android:name=".EditarAgendamentoActivity" android:exported="false" />
+        <activity android:name=".AlarmeActivity" android:exported="true" />
+        <activity android:name=".CadastroActivity" android:exported="false" />
+        <activity android:name=".HistoricoActivity" />
+
+
+
+        <receiver android:name=".AlarmeReceiver" android:exported="false" />
+
+    </application>
+
+</manifest>
